@@ -4,10 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTaskCRMProject", "TestTaskCRMProject\TestTaskCRMProject.csproj", "{95BD815A-8161-43CE-9167-A7A33B4CDFEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9CDFFAE-5499-4A85-A14C-35106D3ADE41} = {A9CDFFAE-5499-4A85-A14C-35106D3ADE41}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskCRMProjectBLL", "TestTaskCRMProjectBLL\TestTaskCRMProjectBLL.csproj", "{A9CDFFAE-5499-4A85-A14C-35106D3ADE41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5} = {61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskDAL", "TestTaskDAL\TestTaskDAL.csproj", "{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskCRMProjectDAL", "TestTaskDAL\TestTaskCRMProjectDAL.csproj", "{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

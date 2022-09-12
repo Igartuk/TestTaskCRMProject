@@ -1,4 +1,9 @@
+
+using TestTaskCRMProjectBLL;
+
 var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager configuration = builder.Configuration;
+builder.Services.RegisterDependencies();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
