@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="open-popup">Create contact</button>
+      <div class="contacts__list"></div>
+      <div class="popup__bg">
+        <form class="popup">
+          <image src="/images/svg/close.svg" class="close-popup"></image>
+          <label>
+            <div class="form-validation">
+              <input type="text" name="name" class="name" />
+              <div class="label__text">Ваше имя</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <label>
+            <div class="form-validation">
+              <input type="tel" name="mobilePhone" class="mobilePhone" />
+              <div class="label__text">Ваш телефон</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <label>
+            <div class="form-validation">
+              <input type="text" name="jobTitle" class="jobTitle" />
+              <div class="label__text">Ваша должность</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <label>
+            <div class="form-validation">
+              <input type="date" name="birthDate" class="birthDate" />
+              <div class="label__text">Дата рождения</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <button type="submit" class="btn-create">Создать</button>
+        </form>
+      </div>
+
+      <div class="popup__bg__edit">
+        <form class="popup__edit">
+          <image src="/images/svg/close.svg" class="close-popup-edit"></image>
+          <label>
+            <div class="form-validation">
+              <input type="text" name="name" class="name-edit" />
+              <div class="label__text">Ваше имя</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <label
+            ><div class="form-validation">
+              <input type="tel" name="tel" class="mobilePhone-edit" />
+              <div class="label__text">Ваш телефон</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <label>
+            <div class="form-validation">
+              <input type="text" name="jobTitle" class="jobTitle-edit" />
+              <div class="label__text">Ваша должность</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <label
+            ><div class="form-validation">
+              <input type="date" name="birthDate" class="birthDate-edit" />
+              <div class="label__text">Дата рождения</div>
+              <p>Error Message</p>
+            </div>
+          </label>
+          <button type="submit" class="btn-edit">Изменить</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="/main.js"></script>
+</html>
