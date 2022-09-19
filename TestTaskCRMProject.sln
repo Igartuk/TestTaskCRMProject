@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskCRMProject", "TestTaskCRMProject\TestTaskCRMProject.csproj", "{95BD815A-8161-43CE-9167-A7A33B4CDFEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTaskCRMProject", "TestTaskCRMProject\TestTaskCRMProject.csproj", "{95BD815A-8161-43CE-9167-A7A33B4CDFEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9CDFFAE-5499-4A85-A14C-35106D3ADE41} = {A9CDFFAE-5499-4A85-A14C-35106D3ADE41}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskCRMProjectBLL", "TestTaskCRMProjectBLL\TestTaskCRMProjectBLL.csproj", "{A9CDFFAE-5499-4A85-A14C-35106D3ADE41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5} = {61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTaskCRMProjectDAL", "TestTaskDAL\TestTaskCRMProjectDAL.csproj", "{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{95BD815A-8161-43CE-9167-A7A33B4CDFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95BD815A-8161-43CE-9167-A7A33B4CDFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95BD815A-8161-43CE-9167-A7A33B4CDFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CDFFAE-5499-4A85-A14C-35106D3ADE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CDFFAE-5499-4A85-A14C-35106D3ADE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CDFFAE-5499-4A85-A14C-35106D3ADE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CDFFAE-5499-4A85-A14C-35106D3ADE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B11FDE-AD24-4E9E-8961-6661CBA0F0A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
